@@ -11,6 +11,20 @@ Tudo o que é demonstrado aqui são basicamente meta tags que devem ser incluíd
 
 O guia parte do principio que a sua página foi desenvolvida seguindo técnicas de Responsive Design por se adaptar a diferentes dispositivos e resoluções.
 
+## Tópicos
+
+ * ['Enganando' o efeito zoom](#enganando-o-efeito-zoom)
+ * [Transformando a sua página em um Web App](#transformando-a-sua-página-em-um-web-app)
+ * [Definindo a barra de status](#definindo-a-barra-de-status)
+ * [Definindo um nome para o aplicativo](#definindo-um-nome-para-aplicativo)
+   * [Título para iOS 5 ou inferior](#título-para-ios-5-ou-inferior)
+ * [Definindo o ícone do aplicativo](#definindo-o-ícone-do-aplicativo)
+ * [Definindo uma 'startup image'](#definindo-uma-startup-image)
+ * [Desabilitar o reconhecimento automático de telefones](#desabilitar-o-reconhecimento-automático-de-telefones)
+ * [Balão para instalar o Web App](#balão-para-instalar-o-web-app)
+ * [Exemplo completo](#exemplo-completo)
+ * [Referências](#referências)
+
 ## 'Enganando' o efeito zoom
 Para o usuário ter uma melhor experiência ao acessar o seu Web App o conteúdo deve ser visualizado normalmente, ou seja, sem nenhum tipo de zoom, para isso você precisa definir o `viewport` inicial em 1.0 como no exemplo abaixo:
 
