@@ -1,5 +1,15 @@
 # iOS 6 Web Apps
 
+## Licença
+
+O guia está licenciado sob [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/) ![Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png).
+
+O que significa que você pode baixar, utilizar (desde que o uso não seja comercial) e até distribuir desde que sejam citados os autores.
+
+Se sinta livre para alterar/modificar o guia, mas para isso você precisa manter a mesma licença.
+
+Saiba mais sobre a licença Creative Commons na (excelente) tirinha do [Nerdson/Hacktoon](http://labs.hacktoon.com/docs/creative-commons/).
+
 ## Tópicos
 
  * ['Enganando' o efeito zoom](#enganando-o-efeito-zoom)
