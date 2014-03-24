@@ -17,6 +17,9 @@ Saiba mais sobre a licença Creative Commons na (excelente) tirinha do [Nerdson/
  * [Video Track](#video-track)
  * [&lt;progress>](#progress)
  * [Remoção do suporte ao &lt;datetime>](#remoção-do-suporte-ao-datetime)
+ * [APIs JavaScript do HTML 5](#apis-javascript-do-html5)
+ * [Page Visibility API](#page-visibility-api)
+ * [WebSpeech Synthesis API](#webspeech-synthesis-api)
 
 ## TL;DR
 
@@ -88,3 +91,54 @@ O elemento `<progress>` agora é suportado. Ele pode ser usado para criar uma ba
 ## Remoção do suporte ao &lt;datetime>
 
 Seguindo o exemplo do Chrome o Safari no iOS agora também não suporta mais o elemento `<input type="datetime">` e irá interpretá-lo como um `<input type="text">`.
+
+## APIs JavaScript do HTML 5
+
+Vamos começar com as notícias ruins, ainda não foram implementadas: **WebGL**, **FullScreen**, **WebRTC**, **getUserMedia** e **IndexedDB**.
+
+As novas APIs disponíveis são:
+- Page Visibility API
+- XHR 2.0 full implementation
+- Video tracks API (que já abordamos)
+- AirPlay API
+- CSS Regions API
+- Melhoramentos no Canvas
+- Remoção de suporte a Shared Workers
+- WebSpeech Synthesis API
+
+## Page Visibility API
+
+Esta API é usada para detectar se a aba está ativa ou não.
+
+> DEMO: http://mobilexweb.com/ts/api/page.html
+
+## WebSpeech Synthesis API
+
+A WebSpeech API permite que o website grve e transcreva áudio, bem como sintetizar texto utilizando as vozes internas do sistema operacional.
+
+O Safari no iOS 7 inclui apenas a Synthesis API (texto para voz) porém não inclui a API para ouvir o áudio do microfone.
+
+Um pequeno exemplo de como implementar a API:
+
+```javascript
+speechSynthesis.speak(new SpeechSynthesisUtterance("Hello, this is my voice on a webpage"));
+
+//or
+
+var speech = new SpeechSynthesisUtterance();
+speech.text = "Hello";
+speech.volume = 1; //0 to 1
+speech.rate = 1;  //0.1 to 9
+speech.pitch = 1; // 0 to 2, 1 = normal
+speech.lang = "en-US";
+speechSynthesis.speak(speech);
+```
+
+**NOTA:** É possível utilizar alguns eventos como `start` e `end` mas **NÃO** use um `alert` dentro destes eventos, pois se não o Safari irá travar (não me pergunte porquê). 
+
+A `string` que será sintetizada deve ser escrita em texto plano. Nenhum outro formato é suportado no momento.
+
+É importante lembrar que a _WebSpeech Synthesis API_ só irá funcionar após ser explícitamente ativada pelo usuário, através de um clique em um botão, por exemplo. Você não pode iniciá-la usando propriedades como o `onload`.
+
+> DEMO (access it using an iOS device): ad.ag/jmawam 
+	
