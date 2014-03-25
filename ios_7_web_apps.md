@@ -20,6 +20,11 @@ Saiba mais sobre a licença Creative Commons na (excelente) tirinha do [Nerdson/
  * [APIs JavaScript do HTML 5](#apis-javascript-do-html-5)
  * [Page Visibility API](#page-visibility-api)
  * [WebSpeech Synthesis API](#webspeech-synthesis-api)
+ * [Sticky Position](#sticky-position)
+ * [CSS Regions](#css-regions)
+ * [CSS Grid Layout](#css-grid-layout)
+ * [CSS FlexBox](#css-flexbox)
+ * [Fontes Dinâmicas](#fontes-dinâmicas)
 
 ## TL;DR
 
@@ -110,7 +115,7 @@ As novas APIs disponíveis são:
 
 Esta API é usada para detectar se a aba está ativa ou não.
 
-> DEMO: http://mobilexweb.com/ts/api/page.html
+> DEMO: [http://mobilexweb.com/ts/api/page.html](http://mobilexweb.com/ts/api/page.html)
 
 ## WebSpeech Synthesis API
 
@@ -140,5 +145,43 @@ A `string` que será sintetizada deve ser escrita em texto plano. Nenhum outro f
 
 É importante lembrar que a _WebSpeech Synthesis API_ só irá funcionar após ser explícitamente ativada pelo usuário, através de um clique em um botão, por exemplo. Você não pode iniciá-la usando propriedades como o `onload`.
 
-> DEMO (access it using an iOS device): ad.ag/jmawam 
-	
+> DEMO (access it using an iOS device): [http://ad.ag/jmawam](http://ad.ag/jmawam)
+
+## Sticky Position
+
+O _sticky position_ já estava disponível desde o iOS 6.1, mas ninguém pareceu se importar muito. Ele é um híbrido entre o `position: fixed;` e o `position: static;`. 
+
+```css
+h1 {
+  position: -webkit-sticky;
+}
+```
+
+## CSS Regions
+
+O [CSS Regions](http://dev.w3.org/csswg/css-regions/) é uma proposta da Adobe para criar _designs_ baseados em revistas, onde o conteúdo flui de um container para outro. o que pode ser muito útil quando estivermos desenvolvendo para o iPad.
+
+> DEMO: [http://dev.w3.org/csswg/css-regions/](http://dev.w3.org/csswg/css-regions/)
+
+## CSS Grid Layout
+
+Outra especificação para o W3C, desta vez feita pela Microsoft encontra-se disponível para uso.
+
+## CSS FlexBox
+
+A especificação final do FlexBox chegou e foi implementada na nova versão iOS, assim podemos diminuir o uso do `float` e começarmos a usar o `-webkit-flex`.
+
+## Fontes Dinâmicas
+
+Fontes dinâmicas é um novo recurso disponível no iOS 7 que ajusta o tamanho, espaçamento das letras e entre linhas para melhorar a legibilidade. 
+
+Para usar uma fonte dinâmica basta utilizar o prefixo `-apple`.
+
+```css
+h1 {
+  font: -apple-system-headline1;
+}
+p {
+  font: -apple-system-body;
+}
+```
