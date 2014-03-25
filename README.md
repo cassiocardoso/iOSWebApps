@@ -8,9 +8,9 @@ Tudo o que é demonstrado aqui são basicamente meta tags que devem ser incluíd
 
 O guia parte do principio que a sua página foi desenvolvida seguindo técnicas de Responsive Design por se adaptar a diferentes dispositivos e resoluções.
 
-Começe a leitura pelo guia iOS Web Apps (arquivo ios_6_web_apps.md), ele dará a base para a criação do aplicativo.
+Começe a leitura pelo guia iOS Web Apps (arquivo [ios_6_web_apps.md](https://github.com/xablaulabs/iOSWebApps/blob/master/ios_6_web_apps.md)), ele dará a base para a criação do aplicativo.
 
-O guia iOS 7 Web Apps (arquivo ios_7_web_apps.md) demonstra as diferenças no desenvolvimento com foco para iOS 7.
+O guia iOS 7 Web Apps (arquivo [ios_7_web_apps.md](https://github.com/xablaulabs/iOSWebApps/blob/master/ios_7_web_apps.md)) demonstra as diferenças no desenvolvimento com foco para iOS 7.
 
 ## Autores
 
