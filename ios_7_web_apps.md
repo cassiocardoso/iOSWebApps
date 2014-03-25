@@ -17,7 +17,7 @@ Saiba mais sobre a licença Creative Commons na (excelente) tirinha do [Nerdson/
  * [Video Track](#video-track)
  * [&lt;progress>](#progress)
  * [Remoção do suporte ao &lt;datetime>](#remoção-do-suporte-ao-datetime)
- * [APIs JavaScript do HTML 5](#apis-javascript-do-html5)
+ * [APIs JavaScript do HTML 5](#apis-javascript-do-html-5)
  * [Page Visibility API](#page-visibility-api)
  * [WebSpeech Synthesis API](#webspeech-synthesis-api)
 
