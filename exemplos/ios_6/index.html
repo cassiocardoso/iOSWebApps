@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Exemplo de um iOS Web App</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-title" content="iOS Web App">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-precomposed-144x144.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-precomposed-114x114.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-precomposed-72x72.png">
+		<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed-57x57.png">
+		<link rel="apple-touch-startup-image" href="img/apple-touch-startup-320x460.png" media="(device-width: 320px)">
+		<link rel="apple-touch-startup-image" href="img/apple-touch-startup-640x920.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)">
+		<link rel="apple-touch-startup-image" href="img/apple-touch-startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+		<link rel="apple-touch-startup-image" href="img/apple-touch-startup-768x1004.png" media="(device-width: 768px) and (orientation: portrait)">
+		<link rel="apple-touch-startup-image" href="img/apple-touch-startup-748x1024.png" media="(device-width: 768px) and (orientation: landscape)">
+		<link rel="apple-touch-startup-image" href="img/apple-touch-startup-1536x2008.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+		<link rel="apple-touch-startup-image" href="img/apple-touch-startup-2048x1496.png" media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+		<link type="text/css" rel="stylesheet" href="css/add2home.css">
+		<script type="text/javascript">
+			if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+				document.title = "iOS Web App";
+			}
+			var addToHomeConfig = {
+				animationIn: 'fade',
+				animationOut: 'fade',
+				lifespan: 20000,
+				touchIcon: true,
+				message:'pt_br'
+			};
+		</script>
+		<script type="text/javascript" src="js/add2home.js"></script>
+	</head>
+	<body>
+	</body>
+</html>
